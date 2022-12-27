@@ -26,7 +26,6 @@ body {
     box-shadow: 0 0 5px black;
     border: 2px solid steelblue ;
     position: sticky;
-    /* left: 2%; */
     margin: 2%;
     width: 33%;
 }
