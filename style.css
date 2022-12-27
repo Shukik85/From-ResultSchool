@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -5,35 +7,89 @@
 }
 
 body {
-    block-size: 100vw 100vh;
+    font-size: 14px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 400;
+    color: rgb(189, 189, 233);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    background: #3C3B3F;
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(to bottom, #605C3C, #3C3B3F);
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to bottom, #605C3C, #3C3B3F);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, #3a6186, #89253e);
 }
 
-.spn {
+span {
     display: flex;
-    border: 2px solid steelblue;
+    block-size: auto;
+    margin-top: 1%;
+}
+
+h2 {
+    margin: 1% 0%;
+
+}
+
+p {
+    padding: 5%;
+}
+
+button, a {
+    border-radius: 5px;
+    border-style: groove;
+    border-color: #fd9d9da9;
+    background-color: #3a6186;
+    color: rgb(189, 189, 233);
+    margin: 1% 0%;
+    width: auto;
+}
+
+ul {
+    list-style-position: inside;
+    list-style-type: '* ';
 }
 
 .image {
     box-shadow: 0 0 5px black;
-    border: 2px solid steelblue ;
-    position: sticky;
-    /* left: 2%; */
+    align-self: flex-start;
     margin: 2%;
     width: 33%;
 }
 
 .vc {
-    position: sticky;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+    border-style: groove;
+    border-color: #fd9d9da9;
+    position: static;
     margin: 2%;
-    left: 35%;
-    width: auto;
+    width: 65%;
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    color: #dbcccc;
+}
+
+#endvc {
+    color: rgb(189, 189, 233);
+}
+
+.info {
+    font-size: larger;
+}
+
+.card {
+    border-style: groove;
+    border-radius: 10px;
+    border-color: #3a6186;
+    background: linear-gradient(270rad, #3a6186, #89253e);
+    margin: 2%;
+    padding: 20px;
+}
+
+#email, #name, #msg {
+    background-color: rgb(189, 189, 233);
+    border-radius: 5px;
+    margin: 0.5% 0%;
 }
