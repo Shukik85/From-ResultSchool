@@ -18,8 +18,7 @@ body {
 }
 
 span {
-    display: flex;
-    block-size: auto;
+    /* display: flex; */
     margin-top: 1%;
 }
 
@@ -29,7 +28,6 @@ h2 {
 }
 
 p, a {
-    padding: 5%;
     color: rgb(189, 189, 233);
 }
 
@@ -41,10 +39,9 @@ button{
     background-color: #3a6186;
     color: rgb(189, 189, 233);
     margin: 1% 0%;
-    padding: 0 10px;
+    padding:  0 10px;
     min-width: fit-content;
-    max-width: 25%;
-    height: 5vw;
+    height: 25px;
 }
 
 ul {
@@ -67,22 +64,21 @@ tfoot {
 }
 
 .image {
+    float: left;
     box-shadow: 0 0 5px black;
-    align-self: flex-start;
-    margin: 2%;
-    width: 33%;
+    margin-right: 3%;
+    width: 210px;
 }
 
 .vc {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: flow-root;
     border-radius: 5px;
     border-style: groove;
     border-color: #fd9d9da9;
-    position: static;
+    box-sizing: border-box;
     margin: 2%;
-    width: 65%;
+    padding: 2%;
+    max-width: fit-content;
     font-family: 'Raleway', sans-serif;
     font-style: normal;
     font-weight: 600;
@@ -104,6 +100,7 @@ tfoot {
 }
 
 #endvc {
+    clear: both;
     color: rgb(189, 189, 233);
 }
 
