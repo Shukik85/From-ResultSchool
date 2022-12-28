@@ -47,6 +47,20 @@ ul {
     list-style-type: '* ';
 }
 
+/* graphics and colors */
+thead th,
+tfoot th,
+tfoot td,
+tbody,
+thead,
+tfoot {
+    width: 5%;
+    background: linear-gradient(to bottom,
+            rgba(0, 0, 0, 0.1),
+            rgba(0, 0, 0, 0.5));
+    color: rgb(189, 189, 233);    text-shadow: 1px 1px 1px black;
+}
+
 .image {
     box-shadow: 0 0 5px black;
     align-self: flex-start;
