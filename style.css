@@ -41,7 +41,9 @@ button{
     background-color: #3a6186;
     color: rgb(189, 189, 233);
     margin: 1% 0%;
-    width: 16vw;
+    padding: 0 10px;
+    min-width: fit-content;
+    max-width: 25%;
     height: 5vw;
 }
 
