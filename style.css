@@ -34,6 +34,7 @@ p, a {
 }
 
 button{
+    clear: both;
     border-radius: 5px;
     border-style: groove;
     border-color: #fd9d9da9;
