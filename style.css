@@ -16,10 +16,15 @@ body {
     background-position: center center;
     background: linear-gradient(to right, #3a6186, #89253e);
 }
+@media (max-width: 640px) {
+    body {
+        font-size: 12px;
+    }
+}
 
 span {
     /* display: flex; */
-    margin-top: 1%;
+    margin-bottom: 1%;
 }
 
 h2 {
@@ -28,7 +33,9 @@ h2 {
 }
 
 p, a {
+    text-decoration: none;
     color: rgb(189, 189, 233);
+    padding: .2em;
 }
 
 button{
@@ -40,8 +47,23 @@ button{
     color: rgb(189, 189, 233);
     margin: 1% 0%;
     padding:  0 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     min-width: fit-content;
     height: 25px;
+}
+
+button:hover {
+    border-color: #fde79da9;
+    opacity: .7;
+    color: #fde79da9;
+    cursor: pointer;
+}
+
+button:active {
+    border-color: #fde79da9;
+    opacity: .3;
+    color: #fde79da9;
+    cursor: pointer;
 }
 
 ul {
@@ -57,37 +79,59 @@ tbody,
 thead,
 tfoot {
     width: 5%;
-    background: linear-gradient(to bottom,
-            rgba(0, 0, 0, 0.1),
-            rgba(0, 0, 0, 0.5));
-    color: rgb(189, 189, 233);    text-shadow: 1px 1px 1px black;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5));
+    color: rgb(189, 189, 233);
+    height: 2em;
+    text-align: center;
+    text-shadow: 1px 1px 1px black;
 }
 
 .image {
     float: left;
+    position: relative;
     box-shadow: 0 0 5px black;
     margin-right: 3%;
     width: 210px;
 }
 
+@media (max-width: 640px) {
+    .image {
+            float: none;
+            box-shadow: 0 0 5px black;
+            width: 210px;
+        }
+}
+
 .vc {
-    display: flow-root;
+    display: inline-block;
     border-radius: 5px;
     border-style: groove;
     border-color: #fd9d9da9;
     box-sizing: border-box;
     margin: 2%;
     padding: 2%;
-    max-width: fit-content;
     font-family: 'Raleway', sans-serif;
     font-style: normal;
     font-weight: 600;
-    font-size: 18px;
     color: #dbcccc;
 }
 
-.info {
-    font-size: larger;
+@media (max-width: 640px) {
+    .vc {
+            display: block;
+            border-radius: 5px;
+            border-style: groove;
+            border-color: #fd9d9da9;
+            box-sizing: border-box;
+            margin: 1%;
+            padding: 1%;
+            /* max-width: fit-content; */
+            text-align: center;
+            font-family: 'Raleway', sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            color: #dbcccc;
+        }
 }
 
 .card {
@@ -97,6 +141,22 @@ tfoot {
     background: linear-gradient(270rad, #3a6186, #89253e);
     margin: 2%;
     padding: 2%;
+}
+
+.info {
+    font-size: 16px;
+}
+
+@media (max-width: 640px) {
+    .card {
+            margin: 1%;
+            padding: 1%;
+        }
+}
+@media (max-width: 640px) {
+    .info {
+            font-size: 13px;
+        }
 }
 
 #endvc {
