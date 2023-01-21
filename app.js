@@ -22,20 +22,6 @@ const certImg = [
         class: "cert_image", src: "http://fs.getcourse.ru/fileservice/file/download/a/177331/sc/254/h/d76eac155279c9d3d8c42ba28dc927b7.png", alt: "сертификаты"
     }
 ];
-// Для работы нужен фреймворк!? ActiveXObject undefined!
-// function ShowFolderFileList(folderspec) {
-//     var fso, f, fc, s;
-//     fso = new ActiveXObject('Scripting.FileSystemObject');
-//     f = fso.GetFolder(folderspec);
-//     fc = new Enumerator(f.files);
-//     s = '';
-//     for (; !fc.atEnd(); fc.moveNext()) {
-//         s += fc.item();
-//         s += '<br>';
-//     }
-//     return (s);
-// }
-// document.write(ShowFolderFileList('C:\Users\shuki\OneDrive\Documents\VScode_html&css\img'))
 
 function init() {
     let html = "";
@@ -44,7 +30,8 @@ function init() {
         html += toCard(img, index, certImg.length);
     }
 
-    certs.innerHTML = html;
+    certs.innerHTML = html
+;
 }
 
 function toCard(img, index, len) {
