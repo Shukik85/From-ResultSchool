@@ -65,11 +65,14 @@ button:active {
     min-height: 400px;
     margin: 2%;
     padding: 2%;
-    font-weight: 600;
+    font-size: large;
 }
 
 @media (max-width: 640px) {
     #vc {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         border-radius: 5px;
         border-style: groove;
         border-color: #fd9d9da9;
@@ -85,11 +88,14 @@ button:active {
     box-shadow: 0 0 5px black;
     margin-right: 3%;
     height: 320px;
+    width: fit-content;
 }
 
 @media (max-width: 640px) {
     .image {
+        float: none;
         margin: 0;
+
     }
 }
 
@@ -185,6 +191,8 @@ tfoot {
 
 @media (max-width: 640px) {
     .footer {
-            display: block;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
         }
 }
