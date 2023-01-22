@@ -1,61 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="keywords" content="Плотников, Plotnikov, html, css, course" />
+    <meta name="keywords" content="Плотников, plotnikovknows, html, css, course" />
     <meta
       name="description"
       content="Это первая работа с html и css, Плотникова Александра."
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
     />
     <link rel="stylesheet" href="style.css" />
     <title>Плотников html начало</title>
   </head>
 
   <body>
-    <div class="vc">
-      <img class="image" src="img/avatar.png" alt="Аватар" />
-      <h1>Плотников Александр</h1>
-      <p>
-        <strong
-          >Я работаю автослесарем по ремонту и обслуживанию спецтехники.</strong
-        ><br />
-        Сейча учусь програмировать. Прохожу разные
-        <strong>короткие</strong> курсы. Чаще всего это видео курсы по
-        програмированию на языке C/C++.
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
-        animi est at. Eius atque explicabo sed cum fugit debitis iste,
-        repellendus commodi pariatur, beatae eligendi similique! Vitae itaque
-        quaerat ipsum.
-      </p>
-      <p>
-        <em id="endvc"
-          >Хочу стать разработчиком умных устройств и встроенных систем!</em
-        >
-      </p>
-      <h4><strong> Список соцсетей:</strong></h4>
-      <span>
-        <a href="https://t.me/+qE0V-Ph5BCE4Y2Iy" target="_blank">
-          <button type="button">Telegram</button></a
-        >
-
-        <a href="https://github.com/Shukik85" target="_blank"
-          ><button type="button">GitHub</button></a
-        >
-
-        <a href="https://vk.com/plotnikov_alexandr" target="_blank">
-          <button type="button">Kонтакте</button></a
-        >
-      </span>
+    <div id="vc">
+        <img class="image" src="img/avatar.png" alt="Аватар" />
+        <h1>Меня зовут Александр Плотников</h1>
+        <p>
+            На данный момент обучаюсь в Synergy Academy по направлению Full-stack разработчик. Начал интересоваться языками програмирования в конце 2021 года, после приобретения микроконтроллера на китайском сайте.
+        </p>
+        <p>
+            До января 2023 года основным интересующим направлением было изучение Си и С++. В ходе изучения начал понимать, что самостоятельно обучаться не продуктивно и выбраные языки слишком слоные для новичка.
+        </p>
+        <p>
+            Для старта в мире ИТ выбрал Full-stack разработку, т.к. хочу научиться полному циклу разработки веб приложений и сервисов.
+        </p>
+        <p>
+            По окнчанию обучения хочу стать разработчиком IoT-устройств и/или встроенных систем с управлением через веб интерфейс!
+        </p>
     </div>
-    <div class="info" id="info">
+    <div id="info">
         <!-- <div class="card" id="cert">
             <h2>Мои сертификаты</h2>
             <span>
@@ -136,8 +111,7 @@
               <br />
               <textarea
                 id="msg"
-                cols="30"
-                rows="10"
+                rows="5"
                 placeholder="Введите текст сообщения..."
               ></textarea>
             </label>
@@ -146,6 +120,17 @@
         </form>
       </div>
     </div>
+    <footer class="card footer">
+        <h2>Список соцсетей:</h2>
+        <span>
+            <button onclick="window.location.href = 'https://t.me/+qE0V-Ph5BCE4Y2Iy';">Telegram
+            </button>
+            <button onclick="window.location.href='https://github.com/Shukik85';">GitHub
+            </button>
+            <button onclick="window.location.href='https://vk.com/plotnikov_alexandr';">Kонтакте
+            </button>
+        </span>
+    </footer>
     <script src="app.js"></script>
   </body>
 </html>
